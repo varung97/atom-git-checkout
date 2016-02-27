@@ -1,0 +1,38 @@
+# See https://atom.io/docs/latest/hacking-atom-package-word-count#menus for more details
+'context-menu':
+  'atom-text-editor': [
+    {
+      'label': 'Checkout branch'
+      'command': 'git-checkout:checkout'
+    },
+    {
+      'label': 'Merge branch'
+      'command': 'git-checkout:merge'
+    },
+    {
+      'label': 'Remove branch'
+      'command': 'git-checkout:remove'
+    }
+  ]
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'git-checkout'
+      'submenu': [
+        {
+          'label': 'Checkout'
+          'command': 'git-checkout:checkout'
+        },
+        {
+          'label': 'Merge'
+          'command': 'git-checkout:merge'
+        },
+        {
+          'label': 'Remove'
+          'command': 'git-checkout:remove'
+        }
+      ]
+    ]
+  }
+]

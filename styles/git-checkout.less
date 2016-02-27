@@ -1,0 +1,44 @@
+// The ui-variables file is provided by base themes provided by Atom.
+//
+// See https://github.com/atom/atom-dark-ui/blob/master/styles/ui-variables.less
+// for a full listing of what's available.
+@import "ui-variables";
+
+.git-checkout {
+  .selectablelist {
+    background-color: @background-color-highlight;
+    width: 100%;
+    height: 35px;
+    border: solid 1px @base-border-color;
+    color: @text-color;
+    &.selected {
+      background-color: @background-color-selected;
+      color: @text-color-highlight;
+    }
+    &:hover {
+      background-color: @background-color-selected;
+      color: @text-color-highlight;
+    }
+    &.current {
+      color: @text-color-success;
+    }
+    .title {
+      line-height: 35px;
+      vertical-align: middle;
+      margin-left: 10px;
+    }
+  }
+
+  input[type="text"] {
+		width: 90%;
+    height: 30px;
+		background: @background-color-selected;
+		color: @text-color;
+		margin: 0px;
+		outline: 0px;
+		border: 0px;
+		border-radius: 5px;
+
+		&::-webkit-input-placeholder { color: @text-color-subtle; }
+	}
+}
