@@ -9,7 +9,7 @@
     "atom-workspace": "git-checkout:merge",
     "atom-workspace": "git-checkout:remove"
   },
-  "repository": "https://github.com/atom/git-checkout",
+  "repository": "https://github.com/alanzanattadev/atom-git-checkout.git",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
