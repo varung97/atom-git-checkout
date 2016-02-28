@@ -1,7 +1,7 @@
 {
   "name": "git-checkout",
   "main": "./lib/git-checkout",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Branches managment UI for Atom",
   "keywords": [
     "git",
@@ -11,7 +11,11 @@
     "remove"
   ],
   "activationCommands": {
-    "atom-workspace": ["git-checkout:checkout", "git-checkout:merge", "git-checkout:remove"]
+    "atom-workspace": [
+      "git-checkout:checkout",
+      "git-checkout:merge",
+      "git-checkout:remove"
+    ]
   },
   "repository": "https://github.com/alanzanattadev/atom-git-checkout.git",
   "license": "MIT",
