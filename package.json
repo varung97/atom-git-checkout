@@ -11,7 +11,7 @@
     "remove"
   ],
   "activationCommands": {
-    "atom-workspace": "git-checkout:remove"
+    "atom-workspace": ["git-checkout:checkout", "git-checkout:merge", "git-checkout:remove"]
   },
   "repository": "https://github.com/alanzanattadev/atom-git-checkout.git",
   "license": "MIT",
