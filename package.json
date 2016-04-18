@@ -14,7 +14,11 @@
     "atom-workspace": [
       "git-checkout:checkout",
       "git-checkout:merge",
-      "git-checkout:remove"
+      "git-checkout:remove",
+      "git-checkout:rebase",
+      "git-checkout:pull",
+      "git-checkout:push",
+      "git-checkout:updateAndRebase"
     ]
   },
   "repository": "https://github.com/alanzanattadev/atom-git-checkout.git",
