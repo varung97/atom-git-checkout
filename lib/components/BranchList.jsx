@@ -28,10 +28,22 @@ var BranchList = React.createClass({
   },
   componentDidMount: function() {
     this.refs.root.onkeydown = this.handleKeys;
-    this.refs.root.addEventListener('blur', this.onBlur);
+    this.listenBlur();
   },
   componentWillUnmount: function() {
-    this.refs.root.removeEventListener('blur', this.onBlur);
+    this.resetBlurListener();
+  },
+  listenBlur: function() {
+    if (!this.onBlurActivated) {
+      this.onBlurActivated = true;
+      this.refs.root.addEventListener('blur', this.onBlur);
+    }
+  },
+  resetBlurListener: function() {
+    if (this.onBlurActivated) {
+      this.onBlurActivated = false;
+      this.refs.root.removeEventListener('blur', this.onBlur);
+    }
   },
   moveDown: function() {
     if (this.state.editable)
@@ -53,6 +65,7 @@ var BranchList = React.createClass({
     return this.props.branches.length + (this.props.custom ? 1 : 0);
   },
   validate: function(i) {
+    this.resetBlurListener();
     this.resetCustom();
     if (i === undefined)
       this.props.onValidation(this.props.branches[this.state.index]);
@@ -65,6 +78,7 @@ var BranchList = React.createClass({
   },
   onEscape: function() {
     this.resetCustom();
+    this.resetBlurListener();
     this.props.onEscape();
   },
   onBlur: function() {
