@@ -10,17 +10,6 @@
     "merge",
     "remove"
   ],
-  "activationCommands": {
-    "atom-workspace": [
-      "git-checkout:checkout",
-      "git-checkout:merge",
-      "git-checkout:remove",
-      "git-checkout:rebase",
-      "git-checkout:pull",
-      "git-checkout:push",
-      "git-checkout:updateAndRebase"
-    ]
-  },
   "repository": "https://github.com/alanzanattadev/atom-git-checkout.git",
   "license": "MIT",
   "engines": {
@@ -33,5 +22,15 @@
     "react": "^0.14.7",
     "react-addons-update": "^0.14.7",
     "react-dom": "^0.14.7"
+  },
+  "package-dependencies": {
+    "tool-bar": "^0.2.0"
+  },
+  "consumedServices": {
+    "tool-bar": {
+      "versions": {
+        "^0.1.0": "consumeToolBar"
+      }
+    }
   }
 }
