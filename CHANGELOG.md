@@ -1,3 +1,4 @@
+## 0.3.0 - Adds tool-bar buttons
 ## 0.2.0 - Remote features and more commands
 Adds rebase, push, pull, and rebase helper
 Remote repo from Nuclide can now be manipulated
