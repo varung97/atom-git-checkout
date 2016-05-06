@@ -1,8 +1,7 @@
 'use babel'
 
-import React from 'react';
+import React, {update} from 'react-for-atom';
 import classNames from 'classnames';
-import update from 'react-addons-update';
 
 var BranchList = React.createClass({
   getInitialState: function() {
