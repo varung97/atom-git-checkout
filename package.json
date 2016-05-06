@@ -1,7 +1,7 @@
 {
   "name": "git-checkout",
   "main": "./lib/git-checkout",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "Branches managment UI for Atom",
   "keywords": [
     "git",
