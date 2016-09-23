@@ -114,7 +114,7 @@ var BranchList = React.createClass({
       this.handleValidation(this.props.branches[this.state.index], this.state.index);
     } else if (e.which == 27) {
       this.onEscape();
-    } else if (e.which == 38) { //up
+    } else if (e.which == 126) { //up
       this.moveUp();
     } else if (e.which == 40) { //down
       this.moveDown();
